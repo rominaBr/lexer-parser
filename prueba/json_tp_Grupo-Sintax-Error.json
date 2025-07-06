@@ -98,7 +98,7 @@
                     ],
                     "fecha_inicio":"2025-03-28",
                     "fecha_fin":"2025-06-30",
-                    "video":"https://www.youtube.com/watch?v=nqMQU0wfMBI",
+                    "video":"https://www.youtube.com/watch?v=mXN83rSFlJ0",
                     "conclusión":"Este proyecto demuestra cómo es posible combinar el análisis léxico y sintáctico con una interfaz gráfica intuitiva para validar archivos JSON complejos. La flexibilidad de la gramática permite múltiples formas válidas de estructurar los datos, mientras que el análisis robusto asegura que los errores se detecten de forma clara y precisa. La generación automática de un informe en HTML aporta valor agregado, facilitando la visualización del contenido validado. En conjunto, esta herramienta no solo automatiza el proceso de verificación, sino que también contribuye a mejorar la calidad y consistencia de los datos ingresados."
                 }]
         }
