@@ -229,7 +229,7 @@ def t_EMAIL(t):
     return t
 
 def t_URL(t):
-    r'\"https?://[a-zA-Z0-9\-._~:/?#\[\]@!$&\'()*+,;=%]+\"'
+    r'\"https?://[a-zA-Z0-9\-._~:/?#\[\]@!$&\'()*+,=%]+\"'
     t.value = t.value[1:-1]
     return t
 
