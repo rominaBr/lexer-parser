@@ -1,0 +1,109 @@
+{
+    "equipos":[
+        {
+            
+            "nombre_equipo":"SINTAX ERROR",
+            "identificador_equipo":"https://i.postimg.cc/zvQcPBms/LogoSSL.jpg",
+            "link":"https://frre.cvg.utn.edu.ar/course/view.php?id=399",
+            "asignatura":"Sintaxis y semántica de Lenguajes",
+            "carrera":"Ingeniería en Sistemas de Información",
+            "universidad_regional":"UTN Facultad Regional Resistencia",
+            "direccion":{
+                "calle":"French 414",
+                "ciudad":"Resistencia",
+                "país":"Argentina"
+            },
+            !
+            "alianza_equipo":"Como somos un equipo conformado mayoritariamente por personas que trabajan además de cursar la carrera, la organización será la siguiente: Mantendremos una comunicación constante a través de un grupo de WhatsApp, donde se coordinarán los detalles del trabajo. Tendremos reuniones presenciales en la universidad después de clases, siempre y cuando los horarios de todos los miembros lo permitan. También nos reuniremos por Discord los fines de semana, decidiendo entre todos, en conversaciones durante la semana, si será el sábado o el domingo, o ambos si la tarea lo requiere. Utilizaremos herramientas colaborativas como GitHub, Discord, Google Drive, Canva, entre otras, para el desarrollo del trabajo. Las tareas se asignarán según las habilidades de cada miembro. La persona encargada de cada tarea coordinará cómo se llevará a cabo. Los demás se comprometen a apoyar en todo lo que sea necesario, no solo para cumplir los objetivos, sino también para aprender y reforzar los conocimientos requeridos en cada proceso. Todos los miembros somos responsables de cumplir con las tareas y objetivos del equipo. Y lo más importante: cada uno se compromete a no abandonar la materia, y si eso llegara a pasar, hablarlo primero con el resto del equipo.",
+            "integrantes":[
+                {
+                    "nombre":"Laura",
+                    "edad":31,
+                    "cargo":"Project Manager",
+                    "foto":"https://i.postimg.cc/RZtjgvtB/IMG-20250702-WA0093.jpg",
+                    "email":"laura@gmail.com",
+                    "habilidades":"Coordinación del equipo, redes sociales, buscar información, redacción.",
+                    "salario":10000.00,
+                    "activo":true
+                },
+                {
+                    "nombre":"Abigail",
+                    "edad":20,
+                    "cargo":"Ux Designer",
+                    "foto":"https://i.postimg.cc/DZsZpZJq/IMG-20250701-WA0074.jpg",
+                    "email":"abigail@gmail.com",
+                    "habilidades":"Edición de video, redes sociales, inglés, buscar información.",
+                    "salario":9000.00,
+                    "activo":true
+                },
+                
+                {
+                    "nombre":"Romina",
+                    "edad":38,
+                    "cargo":"Developer",
+                    "foto":"https://i.postimg.cc/fkQTxvqm/20240913-142019.jpg",
+                    "email":"romina@gmail.com",
+                    "habilidades":"Programación, buscar información, redacción.",
+                    "salario":14000.00,
+                    "activo":true
+                },
+                
+                {
+                    "nombre":"Luciano",                    
+                    "edad":25,
+                    "cargo":"Product Analyst",
+                    "foto":"https://i.postimg.cc/Fz8JsyGw/IMG-20250702-WA0097.jpg",
+                    "email":"luciano@gmail.com",
+                    "habilidades":"Redes sociales, buscar información, scrum, inglés.",
+                    "salario":8500.00,
+                    "activo":true
+                }
+                ,
+                {
+                    "nombre":"Alejandro",
+                    "cargo":"Devops",
+                    "foto":"https://i.postimg.cc/TYGrv8cV/IMG-20250701-WA0079.jpg",
+                    "email":"alejandro@gmail.com",
+                    "habilidades":"Inglés, buscar información, redacción, programación.",
+                    "salario":15000.00,
+                    "activo":true
+                }
+            ],        
+            "proyectos":[
+                {
+                    "nombre":"Ínterprete JSON y traductor HTML",
+                    "estado":"In progress",
+                    "resumen":"Construir analizadores léxico y sintáctico que permita analizar, validar y transformar un documento JSON que describe y almacena información de equipos y proyectos. Deberá indicar si está bien construido (adecuado al formato indicado, sin errores) de otra manera indicar los errores; adicionalmente a medida que analiza el documento deberá transformar el contenido en un documento HTML.",
+                    "tareas":[
+                        {
+                            "nombre":"Gramática",
+                            "estado":"Done",
+                            "resumen":"Presentar la gramática del analizador sintáctico. Contemplando restricciones del enunciado.",
+                            "fecha_inicio":"2025-03-18",
+                            "fecha_fin":"2025-05-04"
+                        },
+                        {
+                            "nombre":"LEXER",
+                            "estado":"In progress",
+                            "resumen":"Presentar lexer reconociendo todos los tokens. Actualizar documento",
+                            "fecha_inicio":"2025-04-10",
+                            "fecha_fin":"2025-06-08"
+                        },
+                        {
+                            "nombre":"PARSER",
+                            "estado":"To do",
+                            "resumen":"Presentación final. LEXER + PARSER. Funcionamiento completo. Actualizar documento, subir video resumen.",
+                            "fecha_inicio":"2025-04-18",
+                            "fecha_fin":"2025-07-06"
+                        }
+                    ],
+                    "fecha_inicio":"2025-03-28",
+                    "fecha_fin":"2025-06-30",
+                    "video":"https://www.youtube.com/",
+                    "conclusión":"Este proyecto demuestra cómo es posible combinar el análisis léxico y sintáctico con una interfaz gráfica intuitiva para validar archivos JSON complejos. La flexibilidad de la gramática permite múltiples formas válidas de estructurar los datos, mientras que el análisis robusto asegura que los errores se detecten de forma clara y precisa. La generación automática de un informe en HTML aporta valor agregado, facilitando la visualización del contenido validado. En conjunto, esta herramienta no solo automatiza el proceso de verificación, sino que también contribuye a mejorar la calidad y consistencia de los datos ingresados."
+                }]
+        }
+    ], 
+    "version":"1.0.0",
+    "firma_digital":null
+}
