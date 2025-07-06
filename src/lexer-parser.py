@@ -921,7 +921,9 @@ def generar_html(resultado):
         html.append(f"<h1><b>Nombre del Equipo:</b> {equipo.get('nombre_equipo')}")
         html.append("<p><b>Identidad del Equipo:</b></p>")
         html.append(f"<img src='{equipo.get("identidad_equipo")}'>")
-        html.append(f"<p><b>Link:</b> <a href='{equipo.get("link")}' target='_blank' style='text-decoration:none; color: #919191;'>{equipo.get("link")}</a></p>")
+        link = equipo.get("link")
+        if(link):
+            html.append(f"<p><b>Link:</b> <a href='{equipo.get("link")}' target='_blank' style='text-decoration:none; color: #919191;'>{equipo.get("link")}</a></p>")
         html.append(f"<p><b>Asignatura:</b> {equipo.get("asignatura")}</p>")
         html.append(f"<p><b>Carrera:</b> {equipo.get("carrera")}</p>")
         html.append(f"<p><b>Universidad Regional:</b> {equipo.get("universidad_regional")}</p>")
@@ -1066,7 +1068,7 @@ def marcar_linea_error_sintactico(linea):
 root = tk.Tk()
 root.title("Analizador Léxico y Sintáctico")
 root.geometry("1000x650")
-root.iconbitmap("LogoSSL.ico")
+#root.iconbitmap("LogoSSL.ico")
 
 main_frame = tk.Frame(root)
 main_frame.pack(fill=tk.BOTH, expand=True)
