@@ -384,22 +384,21 @@ def p_equipos(p):
     else:
         p[0] = [p[1]] + p[3] 
 
-
 def p_equipo(p):
-    '''equipo : LLAVEI TOK_NOMBRE_EQUIPO STRING COMA TOK_IDENTIDAD_EQ URL COMA TOK_LINK link COMA TOK_ASIGNATURA STRING COMA TOK_CARRERA STRING COMA TOK_UNIVERSIDAD STRING COMA TOK_DIRECCION direccion COMA TOK_ALIANZA STRING COMA TOK_INTEGRANTES CORCHETEI integrantes CORCHETED COMA TOK_PROYECTOS CORCHETEI proyectos CORCHETED LLAVED
-              | LLAVEI TOK_NOMBRE_EQUIPO STRING COMA TOK_IDENTIDAD_EQ URL COMA TOK_ASIGNATURA STRING COMA TOK_CARRERA STRING COMA TOK_UNIVERSIDAD STRING COMA TOK_ALIANZA STRING COMA TOK_INTEGRANTES CORCHETEI integrantes CORCHETED COMA TOK_PROYECTOS CORCHETEI proyectos CORCHETED LLAVED
-              | LLAVEI TOK_NOMBRE_EQUIPO STRING COMA TOK_IDENTIDAD_EQ URL COMA TOK_ASIGNATURA STRING COMA TOK_CARRERA STRING COMA TOK_UNIVERSIDAD STRING COMA TOK_DIRECCION direccion COMA TOK_ALIANZA STRING COMA TOK_INTEGRANTES CORCHETEI integrantes CORCHETED COMA TOK_PROYECTOS CORCHETEI proyectos CORCHETED LLAVED
-              | LLAVEI TOK_NOMBRE_EQUIPO STRING COMA TOK_IDENTIDAD_EQ URL COMA TOK_LINK link COMA TOK_ASIGNATURA STRING COMA TOK_CARRERA STRING COMA TOK_UNIVERSIDAD STRING COMA TOK_ALIANZA STRING COMA TOK_INTEGRANTES CORCHETEI integrantes CORCHETED COMA TOK_PROYECTOS CORCHETEI proyectos CORCHETED LLAVED
+    '''equipo : LLAVEI TOK_NOMBRE_EQUIPO STRING COMA TOK_IDENTIDAD_EQ URL COMA TOK_DIRECCION direccion COMA TOK_LINK link COMA TOK_CARRERA STRING COMA TOK_ASIGNATURA STRING COMA TOK_UNIVERSIDAD STRING COMA TOK_ALIANZA STRING COMA TOK_INTEGRANTES CORCHETEI integrantes CORCHETED COMA TOK_PROYECTOS CORCHETEI proyectos CORCHETED LLAVED
+              | LLAVEI TOK_NOMBRE_EQUIPO STRING COMA TOK_IDENTIDAD_EQ URL COMA TOK_CARRERA STRING COMA TOK_ASIGNATURA STRING COMA TOK_UNIVERSIDAD STRING COMA TOK_ALIANZA STRING COMA TOK_INTEGRANTES CORCHETEI integrantes CORCHETED COMA TOK_PROYECTOS CORCHETEI proyectos CORCHETED LLAVED
+              | LLAVEI TOK_NOMBRE_EQUIPO STRING COMA TOK_IDENTIDAD_EQ URL COMA TOK_DIRECCION direccion COMA TOK_CARRERA STRING COMA TOK_ASIGNATURA STRING COMA TOK_UNIVERSIDAD STRING COMA TOK_ALIANZA STRING COMA TOK_INTEGRANTES CORCHETEI integrantes CORCHETED COMA TOK_PROYECTOS CORCHETEI proyectos CORCHETED LLAVED
+              | LLAVEI TOK_NOMBRE_EQUIPO STRING COMA TOK_IDENTIDAD_EQ URL COMA TOK_LINK link COMA TOK_CARRERA STRING COMA TOK_ASIGNATURA STRING COMA TOK_UNIVERSIDAD STRING COMA TOK_ALIANZA STRING COMA TOK_INTEGRANTES CORCHETEI integrantes CORCHETED COMA TOK_PROYECTOS CORCHETEI proyectos CORCHETED LLAVED
     '''     
     if(len(p) == 36):
         p[0] = {
             "nombre_equipo": p[3],
             "identidad_equipo": p[6],
-            "link": p[9],
-            "asignatura": p[12],
+            "direccion": p[9],
+            "link": p[12],
             "carrera": p[15],
-            "universidad_regional": p[18],
-            "direccion": p[21],
+            "asignatura": p[18],
+            "universidad_regional": p[21],
             "alianza_equipo": p[24],
             "integrantes": p[28],
             "proyectos": p[33]
@@ -407,22 +406,22 @@ def p_equipo(p):
     elif(len(p) == 30):
         p[0] = {
             "nombre_equipo": p[3],
-            "identidad_equipo": p[6],            
-            "asignatura": p[9],
-            "carrera": p[12],
+            "identidad_equipo": p[6],
+            "carrera": p[9],
+            "asignatura": p[12],
             "universidad_regional": p[15],
             "alianza_equipo": p[18],
             "integrantes": p[22],
             "proyectos": p[27]
         }
-    elif(p[17]=='"direccion":'):
+    elif(p[9] == 'direccion'):
         p[0] = {
             "nombre_equipo": p[3],
             "identidad_equipo": p[6],
-            "asignatura": p[9],
+            "direccion": p[9],
             "carrera": p[12],
-            "universidad_regional": p[15],
-            "direccion": p[18],
+            "asignatura": p[15],
+            "universidad_regional": p[18],
             "alianza_equipo": p[21],
             "integrantes": p[25],
             "proyectos": p[30]
@@ -432,13 +431,13 @@ def p_equipo(p):
             "nombre_equipo": p[3],
             "identidad_equipo": p[6],
             "link": p[9],
-            "asignatura": p[12],
-            "carrera": p[15],
+            "carrera": p[12],
+            "asignatura": p[15],
             "universidad_regional": p[18],
             "alianza_equipo": p[21],
             "integrantes": p[25],
             "proyectos": p[30]
-        }   
+        }
     
 
 def p_link(p):

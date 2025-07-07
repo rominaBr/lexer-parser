@@ -4,15 +4,15 @@
             
             "nombre_equipo":"SINTAX ERROR",
             "identificador_equipo":"https://i.postimg.cc/zvQcPBms/LogoSSL.jpg",
-            "link":"https://frre.cvg.utn.edu.ar/course/view.php?id=399",
-            "asignatura":"Sintaxis y semántica de Lenguajes",
-            "carrera":"Ingeniería en Sistemas de Información",
-            "universidad_regional":"UTN Facultad Regional Resistencia",
             "direccion":{
                 "calle":"French 414",
                 "ciudad":"Resistencia",
                 "país":"Argentina"
             },
+            "link":"https://frre.cvg.utn.edu.ar/course/view.php?id=399",
+            "carrera":"Ingeniería en Sistemas de Información",
+            "asignatura":"Sintaxis y semántica de Lenguajes",
+            "universidad_regional":"UTN Facultad Regional Resistencia",
             !
             "alianza_equipo":"Como somos un equipo conformado mayoritariamente por personas que trabajan además de cursar la carrera, la organización será la siguiente: Mantendremos una comunicación constante a través de un grupo de WhatsApp, donde se coordinarán los detalles del trabajo. Tendremos reuniones presenciales en la universidad después de clases, siempre y cuando los horarios de todos los miembros lo permitan. También nos reuniremos por Discord los fines de semana, decidiendo entre todos, en conversaciones durante la semana, si será el sábado o el domingo, o ambos si la tarea lo requiere. Utilizaremos herramientas colaborativas como GitHub, Discord, Google Drive, Canva, entre otras, para el desarrollo del trabajo. Las tareas se asignarán según las habilidades de cada miembro. La persona encargada de cada tarea coordinará cómo se llevará a cabo. Los demás se comprometen a apoyar en todo lo que sea necesario, no solo para cumplir los objetivos, sino también para aprender y reforzar los conocimientos requeridos en cada proceso. Todos los miembros somos responsables de cumplir con las tareas y objetivos del equipo. Y lo más importante: cada uno se compromete a no abandonar la materia, y si eso llegara a pasar, hablarlo primero con el resto del equipo.",
             "integrantes":[
