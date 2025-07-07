@@ -414,7 +414,7 @@ def p_equipo(p):
             "integrantes": p[22],
             "proyectos": p[27]
         }
-    elif(p[9] == 'direccion'):
+    elif(p[8] == '"direccion":'):
         p[0] = {
             "nombre_equipo": p[3],
             "identidad_equipo": p[6],
